@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Site historia</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* TOPO */
+header {
+    background: #c4170c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.menu-btn {
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #c4170c;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background: #a31209;
+}
+
+.container {
+    max-width: 800px;   /* limita a largura */
+    margin: 40px auto;  /* centraliza */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.imagem {
+    width: 100%;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    QUILOMBO DOS PALMARES
+</header>
+
+<div id="menu" class="menu">
+    <a href="index.html">Introdução</a>
+    <a href="historia1.html">História parte 1</a>
+    <a href="historia2.html">História parte 2</a>
+    <a href="cultura.html">Cultura</a>
+    <a href="territorio.html">Território</a>
+    <a href="Video.html">Nosso video</a>
+</div>
+
+<div class="container">
+    <h1>História parte 1</h1>
+    <p>O Quilombo dos Palmares foi muito mais do que um simples esconderijo. Ele representou a maior e mais duradoura resistência contra a escravidão nas Américas.</p>
+    <p>Para entender melhor a primeira parte dessa trajetória, que vai desde o seu surgimento até a sua consolidação, precisamos olhar para a organização inicial e para a liderança de Ganga Zumba.</p>
+    <p> O Início e a União dos Mocambos: A história de Palmares começou no final do século XVI, por volta de 1590.</p>
+    <p>Nessa época, os primeiros escravizados fugiram dos engenhos de açúcar de Pernambuco e Alagoas para a Serra da Barriga. O que começou como pequenos grupos isolados logo se transformou em uma rede de povoados conhecidos como Mocambos.</p>
+    <p>O nome “Palmares” vem da grande quantidade de palmeiras na região. Essas palmeiras forneciam alimento e matéria-prima para os habitantes.</p>
+    <p>A Confederação de Palmares: Muitas pessoas acham que Palmares era uma única aldeia, mas na verdade era uma união de vários mocambos. Um desses mocambos era o de Cerca Real do Macaco, que era o principal e o centro político.</p>
+    <img class="imagem" src="Ganga.jpg">
+    <p>A era de Ganga Zumba: O primeiro grande líder documentado de Palmares foi Ganga Zumba. Ele é frequentemente descrito como um “rei” que governou Palmares no seu auge de estabilidade. Durante o seu comando, o quilombo atingiu uma população estimada entre 20 mil e 30 mil habitantes.</p>
+    <p>Algumas características importantes do governo de Ganga Zumba incluem:</p>
+    <p>Diplomacia: Ele não era apenas um guerreiro, mas um político que buscava manter a autonomia de Palmares através de negociações.
+    <p>Estrutura Hierárquica: O quilombo funcionava como um Estado africano no Brasil, com chefes locais respondendo ao poder central de Ganga Zumba.</p>
+    <p>Resistência às Incursões: Durante este período, Palmares sobreviveu a dezenas de ataques, tanto de tropas portuguesas quanto de holandeses.</p>
+    <p>O Ponto de Inflexão, o acordo de 1678: Este evento marcou o fim da primeira fase de Palmares e gerou a transição para a era de Zumbi. Após décadas de conflito, o governador da Capitania de Pernambuco, Aires de Souza e Castro, propôs um tratado de paz a Ganga Zumba.</p>
+    <p>O Tratado de Cucaú: A proposta era o seguinte, os palmarinos teriam liberdade e terras na região de Cucaú, desde que parassem de aceitar novos escravizados fugidos e devolvessem aqueles que não tivessem nascido no quilombo. Ganga Zumba aceitou o acordo, acreditando que traria paz ao seu povo.</p>
+    <p>No entanto, uma grande parte dos quilombolas, liderada por seu sobrinho Zumbi, considerou o acordo uma traição. Eles não aceitavam a liberdade “concedida” enquanto outros africanos continuavam escravizados.</p>
+    <p>Essa divisão interna marcou o fim da hegemonia de Ganga Zumba e o início da liderança de Zumbi, focada na resistência total e militarizada.</p>
+    <img class="imagem" src="Zumbi.jpeg">
+</div>
+
+<script>
+function toggleMenu() {
+    let menu = document.getElementById("menu");
+
+    if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+    } else {
+        menu.style.left = "0px";
+    }
+}
+</script>
+
+</body>
+</html>
